@@ -33,7 +33,9 @@ As for the preliminary questions we hope to answer is what are the factors that 
 
 Links: 
 --WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data
+
 --US BEA: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas
+
 --USDA ERS: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
 
 ### Machine Learning
