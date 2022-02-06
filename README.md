@@ -1,5 +1,7 @@
 # uw-project-demo
 
+### Github
+
 ##### Communication Protocols
 
 Communication Expectations:
@@ -21,8 +23,6 @@ Communication Expectations:
 ​	--The team will meet during office hours on Saturdays, starting around 10:30 AM CST; otherwise, the team will meet during 		normal class hours. Additional Zoom team meetings will be discussed and confirmed either at the ending of a Zoom meeting or 		through the Slack channel as needed
 
 ### Presentation
-
-### Github
 
 ### Machine Learning
 
