@@ -32,9 +32,9 @@ The data sources that we will use include the Department of Justice from the sta
 As for the preliminary questions we hope to answer is what are the factors that might increase or decrease the rate of crime in a county in Wisconsin? Does educational attainment influence this rate? Does poverty level factor into the level of crime? Does economic output (GDP) factor into the rate of crime? These are the preliminary questions, but these could be expanded if we find other datasets that could be included, for instance demographic information (like married or single, religious or non) or different avenues could be explored based on what we find in the data itself.
 
 Links: 
-WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data
-US BEA: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas
-USDA ERS: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
+--WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data
+--US BEA: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas
+--USDA ERS: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/
 
 ### Machine Learning
 
