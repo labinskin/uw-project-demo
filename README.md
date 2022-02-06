@@ -1,7 +1,5 @@
 # uw-project-demo
 
-<<<<<<< HEAD
-
 ##### Communication Protocols
 
 Communication Expectations:
