@@ -65,13 +65,6 @@ Another way to approach the larger question of what drives crime, is to allow a 
 
 Before a model can be decided upon the data at hand needs to be reviewed. This exploratory data analysis is crucial to becomeing familiar with the information and will likely lean towards a particular model. The exploratory data analysis includes but it not limited to, phyiscally viewing the data as a dataframe, understanding data types, data shapes and distributions, descriptive statistics, a high level correlation analysis, missing values and how to deal with them, and finally possible scaling or encoding. By the time this initial analysis is done, a better feel for the data will be attained and decisions around which models to try first will be made. 
 
-
-### Presentation
-
-### Github
-
-### Machine Learning
-
 ### Database
 
 For our database, we will be creating an RDS PostgreSQL instance that will connect into pgAdmin. Our raw data will be stored on the cloud within an S3 bucket - similar to a folder on a computer. This way, we will all have access to necessary data and the ability to connect to pgAdmin as well as Tableau.
