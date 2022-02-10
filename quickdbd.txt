@@ -1,0 +1,358 @@
+Offenses
+-
+County varchar FK 
+Agency_Name varchar
+Offense_Description varchar 
+Min_months_submitted int
+Year int
+Offense_Count int
+
+Unemployment
+-
+State varchar
+County varchar PK FK >- Offenses.County
+Rural_urban_continuum_code_2013 int
+Urban_influence_code_2013 int
+Metro_2013 int
+Civilian_labor_force_2000 int
+Employed_2000 int
+Unemployed_2000 int
+Unemployment_rate_2000 int
+Civilian_labor_force_2001 int
+Employed_2001 int
+Unemployed_2001 int
+Unemployment_rate_2001 int
+Civilian_labor_force_2002 int
+Employed_2002 int
+Unemployed_2002 int
+Unemployment_rate_2002 int
+Civilian_labor_force_2003 int
+Employed_2003 int
+Unemployed_2003 int
+Unemployment_rate_2003 int
+Civilian_labor_force_2004 int
+Employed_2004 int
+Unemployed_2004 int
+Unemployment_rate_2004 int
+Civilian_labor_force_2005 int
+Employed_2005 int
+Unemployed_2005 int
+Unemployment_rate_2005 int
+Civilian_labor_force_2006 int
+Employed_2006 int
+Unemployed_2006 int
+Unemployment_rate_2006 int
+Civilian_labor_force_2007 int
+Employed_2007 int
+Unemployed_2007 int
+Unemployment_rate_2007 int
+Civilian_labor_force_2008 int
+Employed_2008 int
+Unemployed_2008 int
+Unemployment_rate_2008 int
+Civilian_labor_force_2009 int
+Employed_2009 int
+Unemployed_2009 int
+Unemployment_rate_2009 int
+Civilian_labor_force_2010 int
+Employed_2010 int
+Unemployed_2010 int
+Unemployment_rate_2010 int
+Civilian_labor_force_2011 int
+Employed_2011 int
+Unemployed_2011 int
+Unemployment_rate_2011 int
+Civilian_labor_force_2012 int
+Employed_2012 int
+Unemployed_2012 int
+Unemployment_rate_2012 int
+Civilian_labor_force_2013 int
+Employed_2013 int
+Unemployed_2013 int
+Unemployment_rate_2013 int
+Civilian_labor_force_2014 int
+Employed_2014 int
+Unemployed_2014 int
+Unemployment_rate_2014 int
+Civilian_labor_force_2015 int
+Employed_2015 int
+Unemployed_2015 int
+Unemployment_rate_2015 int
+Civilian_labor_force_2016 int
+Employed_2016 int
+Unemployed_2016 int
+Unemployment_rate_2016 int
+Civilian_labor_force_2017 int
+Employed_2017 int
+Unemployed_2017 int
+Unemployment_rate_2017 int
+Civilian_labor_force_2018 int
+Employed_2018 int
+Unemployed_2018 int
+Unemployment_rate_2018 int
+Civilian_labor_force_2019 int
+Employed_2019 int
+Unemployed_2019 int
+Unemployment_rate_2019 int
+Civilian_labor_force_2020 int
+Employed_2020 int
+Unemployed_2020 int
+Unemployment_rate_2020 int
+Median_Household_Income_2019 int
+Med_HH_Income_Percent_of_State_Total_2019 int
+
+Alcohol_Consumption
+-
+State varchar
+County varchar PK FK >- Offenses.County
+2002_Both_Sexes int
+2002_Females int
+2002_Males int
+2003_Both_Sexes int
+2003_Females int
+2003_Males int
+2004_Both_Sexes int
+2004_Females int
+2004_Males int
+2005_Both_Sexes int
+2005_Females int
+2005_Males int
+2006_Both_Sexes int
+2006_Females int
+2006_Males int
+2007_Both_Sexes int
+2007_Females int
+2007_Males int
+2008_Both_Sexes int
+2008_Females int
+2008_Males int
+2009_Both_Sexes int
+2009_Females int
+2009_Males int
+2010_Both_Sexes int
+2010_Females int
+2010_Males int
+2011_Both_Sexes int
+2011_Females int
+2011_Males int
+2012_Both_Sexes int
+2012_Females int
+2012_Males int
+Percent_Change_2002-2012_Both_Sexes int
+Percent_Change_2002-2012_Females int
+Percent_Change_2002-2012_Males int
+Percent_Change_2005-2012_Both_Sexes1 int
+Percent_Change_2005-2012_Females int
+Percent_Change_2005-2012_Males int
+
+Binge_Drinking
+-
+State varchar
+County varchar PK FK >- Alcohol_Consumption.County
+2002_Both_Sexes int
+2002_Females int
+2002_Males int
+2003_Both_Sexes int
+2003_Females int
+2003_Males int
+2004_Both_Sexes int
+2004_Females int
+2004_Males int
+2005_Both_Sexes int
+2005_Females int
+2005_Males int
+2006_Both_Sexes int
+2006_Females int
+2006_Males int
+2007_Both_Sexes int
+2007_Females int
+2007_Males int
+2008_Both_Sexes int
+2008_Females int
+2008_Males int
+2009_Both_Sexes int
+2009_Females int
+2009_Males int
+2010_Both_Sexes int
+2010_Females int
+2010_Males int
+2011_Both_Sexes int
+2011_Females int
+2011_Males int
+2012_Both_Sexes int
+2012_Females int
+2012_Males int
+Percent_Change_2002-2012_Both_Sexes int
+Percent_Change_2002-2012_Females int
+Percent_Change_2002-2012_Males int
+Percent_Change_2005-2012_Both_Sexes int
+Percent_Change_2005-2012_Females int
+Percent_Change_2005-2012_Males int
+
+Education
+-
+State varchar 
+County varchar PK FK >- Poverty.County
+2003_Rural-urban_Continuum_Code int
+2003_Urban_Influence_Code int
+2013_Rural-urban_Continuum_Code int
+2013_Urban_Influence_Code int
+Less_than_a_high_school_diploma_1970 int
+High_school_diploma_only_1970 int
+Some_college_1970 int
+Four_years_of_college_or_higher_1970 int
+Percent_of_adults_with_less_than_a_high_school_diploma_1970 int
+Percent_of_adults_with_a_high_school_diploma_only_1970 int
+Percent_of_adults_completing_some_college_1970 int
+Percent_of_adults_completing_four_years_of_college_or_higher_1970 int
+Less_than_a_high_school_diploma_1980 int
+High_school_diploma_only_1980 int
+Some_college_1980 int
+Four_years_of_college_or_higher_1980 int
+Percent_of_adults_with_less_than_a_high_school_diploma_1980 int
+Percent_of_adults_with_a_high_school_diploma_only_1980 int
+Percent_of_adults_completing_some_college_1980 int
+Percent_of_adults_completing_four_years_of_college_or_higher_1980 int
+Less_than_a_high_school_diploma_1990 int
+High_school_diploma_only_1990 int
+Some_college_or_associates_degree_1990 int
+Bachelors_degree_or_higher_1990 int
+Percent_of_adults_with_less_than_a_high_school_diploma_1990 int
+Percent_of_adults_with_a_high_school_diploma_only_1990 int
+Percent_of_adults_completing_some_college_or_associates_degree_1990 int
+Percent_of_adults_with_a_bachelors_degree_or_higher_1990 int
+Less_than_a_high_school_diploma_2000 int
+High_school_diploma_only_2000 int
+Some_college_or_associates_degree_2000 int
+Bachelors_degree_or_higher_2000 int
+Percent_of_adults_with_less_than_a_high_school_diploma_2000 int
+Percent_of_adults_with_a_high_school_diploma_only_2000 int
+Percent_of_adults_completing_some_college_or_associates_degree_2000 int
+Percent_of_adults_with_a_bachelors_degree_or_higher_2000 int
+Less_than_a_high_school_diploma_2015-19 int
+High_school_diploma_only_2015-19 int
+Some_college_or_associates_degree_2015-19 int
+Bachelors_degree_or_higher_2015-19 int
+Percent_of_adults_with_less_than_a_high_school_diploma_2015-19 int
+Percent_of_adults_with_a_high_school_diploma_only_2015-19 int
+Percent_of_adults_completing_some_college_or_associates_degree_2015-19 int
+Percent_of_adults_with_a_bachelors_degree_or_higher_2015-19 int
+
+Heavy_Drinking
+-
+State varchar
+County varchar PK FK >- Alcohol_Consumption.County
+2005_Both_Sexes int
+2005_Females int
+2005_Males int
+2006_Both_Sexes int
+2006_Females int
+2006_Males int
+2007_Both_Sexes int
+2007_Females int
+2007_Males int
+2008_Both_Sexes int
+2008_Females int
+2008_Males int
+2009_Both_Sexes int
+2009_Females int
+2009_Males int
+2010_Both_Sexes int
+2010_Females int
+2010_Males int
+2011_Both_Sexes int
+2011_Females int
+2011_Males int
+2012_Both_Sexes int
+2012_Females int
+2012_Males int
+Percent_Change_2005-2012_Both_Sexes int
+Percent_Change_2005-2012_Females int
+Percent_Change_2005-2012_Males int
+
+Poverty
+-
+Stabr varchar
+County varchar PK FK >- GDP.County
+Rural-urban_Continuum_Code_2003 int
+Urban_Influence_Code_2003 int
+Rural-urban_Continuum_Code_2013 int
+Urban_Influence_Code_2013 int
+POVALL_2019 int
+CI90LBALL_2019 int
+CI90UBALL_2019 int
+PCTPOVALL_2019 int
+CI90LBALLP_2019 int
+CI90UBALLP_2019 int
+POV017_2019 int
+CI90LB017_2019 int
+CI90UB017_2019 int
+PCTPOV017_2019 int
+CI90LB017P_2019 int
+CI90UB017P_2019 int
+POV517_2019 int
+CI90LB517_2019 int
+CI90UB517_2019 int
+PCTPOV517_2019 int
+CI90LB517P_2019 int
+CI90UB517P_2019 int
+MEDHHINC_2019 int
+CI90LBINC_2019 int
+CI90UBINC_2019 int
+
+Prop_Binge_Drinking
+-
+State varchar
+County varchar PK FK >- Alcohol_Consumption.County
+2002_Both_Sexes int
+2002_Females int
+2002_Males int
+2003_Both_Sexes int
+2003_Females int
+2003_Males int
+2004_Both_Sexes int
+2004_Females int
+2004_Males int
+2005_Both_Sexes int
+2005_Females int
+2005_Males int
+2006_Both_Sexes int
+2006_Females int
+2006_Males int
+2007_Both_Sexes int
+2007_Females int
+2007_Males int
+2008_Both_Sexes int
+2008_Females int
+2008_Males int
+2009_Both_Sexes int
+2009_Females int
+2009_Males int
+2010_Both_Sexes int
+2010_Females int
+2010_Males int
+2011_Both_Sexes int
+2011_Females int
+2011_Males int
+2012_Both_Sexes int
+2012_Females int
+2012_Males int
+Percent_Change_2002-2012_Both_Sexes int
+Percent_Change_2002-2012_Females int
+Percent_Change_2002-2012_Males int
+Percent_Change_2005-2012_Both_Sexes int
+Percent_Change_2005-2012_Females int
+Percent_Change_2005-2012_Males int
+
+GDP
+-
+County varchar PK FK >- Offenses.County
+Real_GDP_2017 int
+Real_GDP_2018 int
+Real_GDP_2019 int
+Real_GDP_2020 int
+Rank_in_State_2020 int
+Percent_change_2018 int
+Percent_change_2019 int
+Percent_change2020 int
+Percent_Rank_in_State_2020 int
