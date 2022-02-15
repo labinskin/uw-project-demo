@@ -170,7 +170,7 @@ Brown,Ashwaubenon PD,Human Trafficking - Commercial Sex,12,2019,1
 Brown,UW-Green Bay PD,Simple Assault,12,2019,1
 Brown,Pulaski PD,Simple Assault,12,2019,0
 Brown,Hobart-Lawrence PD,Simple Assault,12,2019,18
-Brown,Green Bay PD,Simple Assault,12,2019,"1,023"
+Brown,Green Bay PD,Simple Assault,12,2019,1023
 Brown,De Pere PD,Simple Assault,12,2019,39
 Brown,Brown Co SO,Simple Assault,12,2019,166
 Brown,Ashwaubenon PD,Simple Assault,12,2019,75
@@ -191,7 +191,7 @@ Brown,Ashwaubenon PD,Motor Vehicle Theft,12,2019,12
 Brown,UW-Green Bay PD,Larceny Theft,12,2019,16
 Brown,Pulaski PD,Larceny Theft,12,2019,15
 Brown,Hobart-Lawrence PD,Larceny Theft,12,2019,35
-Brown,Green Bay PD,Larceny Theft,12,2019,"1,362"
+Brown,Green Bay PD,Larceny Theft,12,2019,1362
 Brown,De Pere PD,Larceny Theft,12,2019,195
 Brown,Brown Co SO,Larceny Theft,12,2019,571
 Brown,Ashwaubenon PD,Larceny Theft,12,2019,446
@@ -618,7 +618,7 @@ Dane,Mc Farland PD,Simple Assault,12,2019,11
 Dane,Marshall PD,Simple Assault,12,2019,22
 Dane,Maple Bluff PD,Simple Assault,12,2019,1
 Dane,Madison Town PD,Simple Assault,12,2019,32
-Dane,Madison PD,Simple Assault,12,2019,"1,181"
+Dane,Madison PD,Simple Assault,12,2019,1181
 Dane,Fitchburg PD,Simple Assault,12,2019,266
 Dane,DeForest PD,Simple Assault,12,2019,40
 Dane,Dane Co SO,Simple Assault,12,2019,370
@@ -684,7 +684,7 @@ Dane,Mc Farland PD,Larceny Theft,12,2019,45
 Dane,Marshall PD,Larceny Theft,12,2019,23
 Dane,Maple Bluff PD,Larceny Theft,12,2019,5
 Dane,Madison Town PD,Larceny Theft,12,2019,102
-Dane,Madison PD,Larceny Theft,12,2019,"4,966"
+Dane,Madison PD,Larceny Theft,12,2019,4966
 Dane,Fitchburg PD,Larceny Theft,12,2019,378
 Dane,DeForest PD,Larceny Theft,12,2019,88
 Dane,Dane Co SO,Larceny Theft,12,2019,456
@@ -706,7 +706,7 @@ Dane,Mc Farland PD,Burglary,12,2019,9
 Dane,Marshall PD,Burglary,12,2019,8
 Dane,Maple Bluff PD,Burglary,12,2019,3
 Dane,Madison Town PD,Burglary,12,2019,18
-Dane,Madison PD,Burglary,12,2019,"1,072"
+Dane,Madison PD,Burglary,12,2019,1072
 Dane,Fitchburg PD,Burglary,12,2019,89
 Dane,DeForest PD,Burglary,12,2019,6
 Dane,Dane Co SO,Burglary,12,2019,182
@@ -1082,7 +1082,7 @@ EauClaire,Eau Claire Co SO,Motor Vehicle Theft,12,2019,19
 EauClaire,Altoona PD,Motor Vehicle Theft,12,2019,3
 EauClaire,UW-Eau Claire PD,Larceny Theft,12,2019,29
 EauClaire,Fall Creek PD,Larceny Theft,12,2019,8
-EauClaire,Eau Claire PD,Larceny Theft,12,2019,"1,325"
+EauClaire,Eau Claire PD,Larceny Theft,12,2019,1325
 EauClaire,Eau Claire Co SO,Larceny Theft,12,2019,108
 EauClaire,Altoona PD,Larceny Theft,12,2019,90
 EauClaire,UW-Eau Claire PD,Burglary,12,2019,7
@@ -1732,7 +1732,7 @@ Kenosha,Kenosha Co SO,Motor Vehicle Theft,12,2019,11
 Kenosha,UW-Parkside PD,Larceny Theft,12,2019,10
 Kenosha,Twin Lakes PD,Larceny Theft,12,2019,28
 Kenosha,Pleasant Prairie PD,Larceny Theft,12,2019,384
-Kenosha,Kenosha PD,Larceny Theft,12,2019,"1,222"
+Kenosha,Kenosha PD,Larceny Theft,12,2019,1222
 Kenosha,Kenosha Co SO,Larceny Theft,12,2019,216
 Kenosha,UW-Parkside PD,Burglary,12,2019,1
 Kenosha,Twin Lakes PD,Burglary,12,2019,10
@@ -1846,7 +1846,7 @@ LaCrosse,Bangor PD,Motor Vehicle Theft,12,2019,0
 LaCrosse,West Salem PD,Larceny Theft,12,2019,32
 LaCrosse,UW-La Crosse PD,Larceny Theft,12,2019,64
 LaCrosse,Onalaska PD,Larceny Theft,12,2019,492
-LaCrosse,La Crosse PD,Larceny Theft,12,2019,"1,560"
+LaCrosse,La Crosse PD,Larceny Theft,12,2019,1560
 LaCrosse,La Crosse Co SO,Larceny Theft,12,2019,78
 LaCrosse,Holmen PD,Larceny Theft,12,2019,78
 LaCrosse,Campbell PD,Larceny Theft,12,2019,34
@@ -2352,7 +2352,7 @@ Milwaukee,South Milwaukee PD,Simple Assault,12,2019,125
 Milwaukee,Shorewood PD,Simple Assault,12,2019,7
 Milwaukee,River Hills PD,Simple Assault,12,2019,1
 Milwaukee,Oak Creek PD,Simple Assault,12,2019,212
-Milwaukee,Milwaukee PD,Simple Assault,12,2019,"7,329"
+Milwaukee,Milwaukee PD,Simple Assault,12,2019,7329
 Milwaukee,Milwaukee Co SO,Simple Assault,12,2019,140
 Milwaukee,Marquette University PD,Simple Assault,12,2019,25
 Milwaukee,Hales Corners PD,Simple Assault,12,2019,12
@@ -2396,7 +2396,7 @@ Milwaukee,South Milwaukee PD,Motor Vehicle Theft,12,2019,18
 Milwaukee,Shorewood PD,Motor Vehicle Theft,12,2019,10
 Milwaukee,River Hills PD,Motor Vehicle Theft,12,2019,0
 Milwaukee,Oak Creek PD,Motor Vehicle Theft,12,2019,36
-Milwaukee,Milwaukee PD,Motor Vehicle Theft,12,2019,"3,467"
+Milwaukee,Milwaukee PD,Motor Vehicle Theft,12,2019,3467
 Milwaukee,Milwaukee Co SO,Motor Vehicle Theft,12,2019,39
 Milwaukee,Marquette University PD,Motor Vehicle Theft,12,2019,25
 Milwaukee,Hales Corners PD,Motor Vehicle Theft,12,2019,2
@@ -2409,16 +2409,16 @@ Milwaukee,Cudahy PD,Motor Vehicle Theft,12,2019,26
 Milwaukee,Brown Deer PD,Motor Vehicle Theft,12,2019,26
 Milwaukee,Bayside PD,Motor Vehicle Theft,12,2019,1
 Milwaukee,Whitefish Bay PD,Larceny Theft,12,2019,127
-Milwaukee,West Milwaukee PD,Larceny Theft,12,2019,"1,431"
-Milwaukee,West Allis PD,Larceny Theft,12,2019,"1,292"
-Milwaukee,Wauwatosa PD,Larceny Theft,12,2019,"1,197"
+Milwaukee,West Milwaukee PD,Larceny Theft,12,2019,1431
+Milwaukee,West Allis PD,Larceny Theft,12,2019,1292
+Milwaukee,Wauwatosa PD,Larceny Theft,12,2019,1197
 Milwaukee,UW-Milwaukee PD,Larceny Theft,12,2019,93
 Milwaukee,St. Francis PD,Larceny Theft,12,2019,83
 Milwaukee,South Milwaukee PD,Larceny Theft,12,2019,309
 Milwaukee,Shorewood PD,Larceny Theft,12,2019,188
 Milwaukee,River Hills PD,Larceny Theft,12,2019,6
 Milwaukee,Oak Creek PD,Larceny Theft,12,2019,692
-Milwaukee,Milwaukee PD,Larceny Theft,12,2019,"8,122"
+Milwaukee,Milwaukee PD,Larceny Theft,12,2019,8122
 Milwaukee,Milwaukee Co SO,Larceny Theft,12,2019,73
 Milwaukee,Marquette University PD,Larceny Theft,12,2019,215
 Milwaukee,Hales Corners PD,Larceny Theft,12,2019,81
@@ -2440,7 +2440,7 @@ Milwaukee,South Milwaukee PD,Burglary,12,2019,22
 Milwaukee,Shorewood PD,Burglary,12,2019,28
 Milwaukee,River Hills PD,Burglary,12,2019,2
 Milwaukee,Oak Creek PD,Burglary,12,2019,78
-Milwaukee,Milwaukee PD,Burglary,12,2019,"3,613"
+Milwaukee,Milwaukee PD,Burglary,12,2019,3613
 Milwaukee,Milwaukee Co SO,Burglary,12,2019,0
 Milwaukee,Marquette University PD,Burglary,12,2019,23
 Milwaukee,Hales Corners PD,Burglary,12,2019,11
@@ -2462,7 +2462,7 @@ Milwaukee,South Milwaukee PD,Aggravated Assault,12,2019,21
 Milwaukee,Shorewood PD,Aggravated Assault,12,2019,16
 Milwaukee,River Hills PD,Aggravated Assault,12,2019,1
 Milwaukee,Oak Creek PD,Aggravated Assault,12,2019,25
-Milwaukee,Milwaukee PD,Aggravated Assault,12,2019,"5,496"
+Milwaukee,Milwaukee PD,Aggravated Assault,12,2019,5496
 Milwaukee,Milwaukee Co SO,Aggravated Assault,12,2019,103
 Milwaukee,Marquette University PD,Aggravated Assault,12,2019,23
 Milwaukee,Hales Corners PD,Aggravated Assault,12,2019,4
@@ -2484,7 +2484,7 @@ Milwaukee,South Milwaukee PD,Robbery,12,2019,0
 Milwaukee,Shorewood PD,Robbery,12,2019,7
 Milwaukee,River Hills PD,Robbery,12,2019,0
 Milwaukee,Oak Creek PD,Robbery,12,2019,5
-Milwaukee,Milwaukee PD,Robbery,12,2019,"1,920"
+Milwaukee,Milwaukee PD,Robbery,12,2019,1920
 Milwaukee,Milwaukee Co SO,Robbery,12,2019,5
 Milwaukee,Marquette University PD,Robbery,12,2019,13
 Milwaukee,Hales Corners PD,Robbery,12,2019,0
@@ -3275,7 +3275,7 @@ Rock,Beloit PD,Motor Vehicle Theft,12,2019,71
 Rock,Rock Co SO,Larceny Theft,12,2019,163
 Rock,Milton Township PD,Larceny Theft,12,2019,4
 Rock,Milton PD,Larceny Theft,12,2019,53
-Rock,Janesville PD,Larceny Theft,12,2019,"1,398"
+Rock,Janesville PD,Larceny Theft,12,2019,1398
 Rock,Fulton Town PD,Larceny Theft,12,2019,2
 Rock,Evansville PD,Larceny Theft,12,2019,36
 Rock,Edgerton PD,Larceny Theft,12,2019,53
