@@ -75,11 +75,21 @@ Before a model can be decided upon the data at hand needs to be reviewed. This e
 
 ### Database
 
-For our database, we will be creating an RDS PostgreSQL instance that will connect into pgAdmin. Our raw data will be stored on the cloud within an S3 bucket - similar to a folder on a computer. This way, we will all have access to necessary data and the ability to connect to pgAdmin as well as Tableau.
+Our database was created in pgAdmin and linked to an AWS RDS instance. A connection was then made from AWS into a jupyter notebook for the machine learning model code using sqlalchemy and psychopg2. This connection ensure that the model will be able to update each time new data comes into the database in the future. 
 
-To get us started with this, we have created an ERD that will be edited and finalized once our data is cleaned. The initial ERD is shown below.
+To create the database, nine tables were made and loaded with data we had gathered from the links listed below. We then used SQL inner joins to merge eight of these tables on county. Our offenses data required a bit more work. Once the three datasets were loaded into an offenses table, we wanted to group columns in order to see only pertinent information. The following code was used to do so:
 
-![QuickDBD-ERD](https://user-images.githubusercontent.com/90646961/152706722-baa14836-0028-4489-8117-87d04878729f.png)
+CREATE TABLE offenses_by_county
+AS 
+SELECT counties.county, offense_description, year, SUM(offense_count) AS sum_offense_count FROM counties INNER JOIN offenses ON counties.county = offenses.county
+GROUP BY counties.county, offense_description, year 
+ORDER BY counties.county, offense_description, year DESC;
+
+Once we were happy with our new tables, the rest were dropped to keep the database clean. 
+
+The entire schema code can be viewed below. 
+[schema.txt](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt)
+
 
 ### Preliminary Findings
 
