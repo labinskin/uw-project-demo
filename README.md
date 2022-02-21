@@ -5,7 +5,7 @@
 </p>
 
 ### Presentation
-Slides: https://docs.google.com/presentation/d/1jG8A3SGQvkqOGoD52yFTsN8AOYHo_SgOpc7PPfqlGEM/edit
+Slides: https://docs.google.com/presentation/d/1jG8A3SGQvkqOGoD52yFTsN8AOYHo_SgOpc7PPfqlGEM/edit?usp=sharing
 
 ### Purpose
 
