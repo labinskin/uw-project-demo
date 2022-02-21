@@ -81,20 +81,28 @@ For further detail into the machine learning portion of this analysis please rev
 
 ### Database
 
+A relational database is a collection of data organized as tables that can relate to one another through primary and foreign keys. The acronym CRUD represents four key operations used on the data needing to be tracked.  
+
+![image](https://user-images.githubusercontent.com/90646961/155006369-8f011d8a-574c-48e2-bd24-c6238f19d94c.png)
+
+
 Our database was created in pgAdmin and linked to an AWS RDS instance. A connection was then made from AWS into a jupyter notebook for the machine learning model code using sqlalchemy and psychopg2. This connection ensure that the model will be able to update each time new data comes into the database in the future. 
 
 To create the database, nine tables were made and loaded with data we had gathered from the links listed below. We then used SQL inner joins to merge eight of these tables on county. Our offenses data required a bit more work. Once the three datasets were loaded into an offenses table, we wanted to group columns in order to see only pertinent information. The following code was used to do so:
 
+```
 CREATE TABLE offenses_by_county
 AS 
 SELECT counties.county, offense_description, year, SUM(offense_count) AS sum_offense_count FROM counties INNER JOIN offenses ON counties.county = offenses.county
 GROUP BY counties.county, offense_description, year 
 ORDER BY counties.county, offense_description, year DESC;
+```
 
-Once we were happy with our new tables, the rest were dropped to keep the database clean. 
+Once we were happy with our new tables, the rest were dropped to keep the database clean.  
 
-The entire schema code can be viewed below. 
-[schema.txt](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt)
+
+The database schema can be found [here](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt).  
+Our ERD can be viewed [here](https://user-images.githubusercontent.com/90646961/155002994-cc8ceeab-c656-4224-94f3-f1015f7f274b.png).
 
 
 ### Preliminary Findings
