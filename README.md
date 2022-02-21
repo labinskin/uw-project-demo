@@ -98,6 +98,8 @@ The entire schema code can be viewed below.
 
 Some broad preliminary findings based on a quick examination of the correlation data run from the machine learning exercises offers some insight into the data. Looking at the positive correlation of offenses and different variables that were above .95, it seems that there is a positive correlation between different crimes and unemployment and poverty. These two factors appeared most often in relation to different offenses, indicating that higher levels of crime were correlated with higher unemployment and poverty. On the negatively correlated side was county GDP and alcohol use. A majority of our alcohol use data was negatively correlated with crime, and none of it was in the top 5% of positive correlation. Additionally, the overall wealth of the county did not play a factor into it. Two other interesting notes was that the urban/rural codes that identify how urban or rural a county was negatively correlated in some cases, indicating that crime is both an urban, suburban, and rural issue. And, education had mixed results, appearing both in the top 5% and negative correlation between -.25 and -.54, the lowest correlated variable.
 
+Further exploration is needed and being undertaken.
+
 ### Future Study
 
 ### Data Sources Links
