@@ -22,7 +22,7 @@ If you would like to recreate or expand upon this project, the raw data is publi
 
 The database used in this project is explained in the “Data” section below. Raw data for the analysis can be found in csv files with the Data directory above, and the schema can be found [here](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt).
 
-Exploratory analysis can be found in the E_A directory above and the code can be followed ![here](/ E_A/exploratory_analysis.ipynb).
+Exploratory analysis can be found in the E_A directory above and the code can be followed [](/E_A/exploratory_analysis.ipynb).
 
 The machine learning portion of this project is explained in the “Machine Learning” section below. The preprocessing of the data can be reviewed [here](/ ML/ml_preprocessing.ipynb) and the machine learning model can be reviewed  [here](/ ML/Machine_Learning_Final.ipynb).
 
