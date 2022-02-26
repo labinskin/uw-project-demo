@@ -24,7 +24,7 @@ The database used in this project is explained in the “Data” section below. 
 
 Exploratory analysis can be found in the E_A directory above and the code can be followed [here](/E_A/exploratory_analysis.ipynb).
 
-The machine learning portion of this project is explained in the “Machine Learning” section below. The preprocessing of the data can be reviewed [here](/ ML/ml_preprocessing.ipynb) and the machine learning model can be reviewed  [here](/ ML/Machine_Learning_Final.ipynb).
+The machine learning portion of this project is explained in the “Machine Learning” section below. The preprocessing of the data can be reviewed [here](/ML/ml_preprocessing.ipynb) and the machine learning model can be reviewed  [here](/ML/Machine_Learning_Final.ipynb).
 
 Visuals for this project can be found in the Visuals directory above; and were created using [Tableau]( https://www.tableau.com/trial/tableau-software?utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_campaign_id=2017049&utm_language=EN&utm_country=USCA&adgroup=&adused=Brdtest21OLDv1&creative=OLDv1&gclid=Cj0KCQiAmeKQBhDvARIsAHJ7mF51CmHTP5xAMUH-lZeVEBlIM-Tb_XQDx0v2UgAKzKzMB6s5WpBHrh8aAlrcEALw_wcB&gclsrc=aw.ds).
 
