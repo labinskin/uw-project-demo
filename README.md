@@ -137,32 +137,6 @@ GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-c
 ![image](https://user-images.githubusercontent.com/90646961/155824099-1215de1b-712e-47f9-bd41-d95ffd1802bc.png)
 
 
-=======
-
-```
-CREATE TABLE offenses_by_county
-AS 
-SELECT counties.county, offense_description, year, SUM(offense_count) AS sum_offense_count FROM counties INNER JOIN offenses ON counties.county = offenses.county
-GROUP BY counties.county, offense_description, year 
-ORDER BY counties.county, offense_description, year DESC;
-```
-
-Once we were happy with our new tables, the rest were dropped to keep the database clean.  
-### Schema  
-
-The database schema can be found [here](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt).  
-
-### Data  
-
-Our data was chosen based on factors we thought would have an influence on crime rate.
-
-Crime Data from the WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data  
-![image](https://user-images.githubusercontent.com/90646961/155824081-96ae13b3-dcb9-438e-93e8-33dfb2ec69d3.png)
-
-
-GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas  
-![image](https://user-images.githubusercontent.com/90646961/155824099-1215de1b-712e-47f9-bd41-d95ffd1802bc.png)
-
 Education, Poverty, and Population Estimate data from Economic Research Service U.S. Department of Agriculture: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/  
 ![image](https://user-images.githubusercontent.com/90646961/155824170-dbcaae53-f4fd-46bc-8c41-c3950c709c36.png)
 
