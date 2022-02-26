@@ -16,9 +16,9 @@ This project examines the Wisconsin Department of Justice's crime data from 2018
 
 If you would like to recreate or expand upon this project, the raw data is publicly available at the following sites:
 
- *Crime Data from the WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data
- *GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas
- *Education, Poverty, and Population Estimate data from Economic Research Service U.S. Department of Agriculture: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/  
+  * Crime Data from the WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data
+  * GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas
+  * Education, Poverty, and Population Estimate data from Economic Research Service U.S. Department of Agriculture: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/  
 
 The database used in this project is explained in the “Data” section below. Raw data for the analysis can be found in csv files with the Data directory above, and the schema can be found [here](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt).
 
