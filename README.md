@@ -1,4 +1,4 @@
-﻿# ﻿A County Correlation of Crime Data in Wisconsin
+﻿﻿# ﻿A County Correlation of Crime Data in Wisconsin
 
 <p align="center">
   <img src="https://github.com/labinskin/uw-project-demo/blob/readme_branch/Readme/CoatofArms_of_Wisconsin.png"/>
@@ -10,6 +10,24 @@ Slides: https://docs.google.com/presentation/d/1jG8A3SGQvkqOGoD52yFTsN8AOYHo_SgO
 ## Purpose
 
 This project examines the Wisconsin Department of Justice's crime data from 2018-2020. Pulling in data,--including education, unemployment, poverty, GDP, alcohol consumption, and poverty--we use unsupervised machine learning to detect correlation between crime and these other variables.
+
+
+## Explore Crime Yourself
+
+If you would like to recreate or expand upon this project, the raw data is publicly available at the following sites:
+
+*Crime Data from the WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data
+*GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas
+*Education, Poverty, and Population Estimate data from Economic Research Service U.S. Department of Agriculture: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/  
+
+The database used in this project is explained in the “Data” section below. Raw data for the analysis can be found in csv files with the Data directory above, and the schema can be found [here](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt).
+
+Exploratory analysis can be found in the E_A directory above and the code can be followed [here](/ E_A/exploratory_analysis.ipynb).
+
+The machine learning portion of this project is explained in the “Machine Learning” section below. The preprocessing of the data can be reviewed [here](/ ML/ml_preprocessing.ipynb) and the machine learning model can be reviewed  [here](/ ML/Machine_Learning_Final.ipynb).
+
+Visuals for this project can be found in the Visuals directory above; and were created using [Tableau]( https://www.tableau.com/trial/tableau-software?utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_campaign_id=2017049&utm_language=EN&utm_country=USCA&adgroup=&adused=Brdtest21OLDv1&creative=OLDv1&gclid=Cj0KCQiAmeKQBhDvARIsAHJ7mF51CmHTP5xAMUH-lZeVEBlIM-Tb_XQDx0v2UgAKzKzMB6s5WpBHrh8aAlrcEALw_wcB&gclsrc=aw.ds).
+
 
 ## Rationale--Why Crime?
 
@@ -62,16 +80,18 @@ Training, testing, and feature engineering are important steps in developing a s
 
 ### Model Choice
 
-Choice of model for clustering in this analysis is heavily influenced by the two resources below. K-Means, provided by scikit-learn, is the method of choice to start. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. An elbow curve is used to determine the number of clusters to be input to the K-Means method. Depending on the scaler used, the elbow curve suggests the number of clusters are six to eight. Clusters are output from the model and there are some relationships to pursue, but nothing striking. Currently, there are no clusters that are extremely dense and spaced from other clusters.
 
-K-Means does have an output, but it there is certainly room for improvement. A second method is being used to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. 
+Choice of model for clustering in this analysis is heavily influenced by the two resources below. K-Means, provided by scikit-learn, is the method of choice to start. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. An elbow curve is used to determine the number of clusters to be input to the K-Means method. Depending on the scaler used, the elbow curve suggests the number of clusters are six to eight. Clusters are output from the model and there are some relationships to pursue.
+
+
+Using the variable correlations from the exploratory analysis drove many of the decisions on what axis to use. By using variable pairs that had strong correlation values, dense clusters were output. A couple of some of the most distinct and dense clusters were when different crimes were plotted together or when crimes are plotted with poverty. The dense clusters that were output signify a strong relationship.  
+
+K-Means does have a good output, but it there is certainly room for improvement. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. 
 
 
 [article](https://machinelearningmastery.com/clustering-algorithms-with-python/)
 
 [sklearn_clustering](https://scikit-learn.org/stable/modules/clustering.html)
-
-Work is continuing in the machine learning portion of this analysis. Another method will be selected and outputs will be reviewed.
 
 For further detail into the machine learning portion of this analysis please review the following code:
 
@@ -89,6 +109,7 @@ A relational database is a collection of data organized as tables that can relat
 Our database was created in pgAdmin and linked to an AWS RDS instance. A connection was then made from AWS into a jupyter notebook for the machine learning model code using sqlalchemy and psychopg2. This connection ensure that the model will be able to update each time new data comes into the database in the future. 
 
 To create the database, eight tables were made and loaded with data we had gathered from the links listed below. We then used SQL inner joins to merge eight of these tables on county. Our offenses data required a bit more work. Once the three datasets were loaded into an offenses table, we wanted to group columns in order to see only pertinent information. The following code was used to do so:
+
 
 ```
 CREATE TABLE offenses_by_county
@@ -115,6 +136,33 @@ Crime Data from the WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-da
 GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas  
 ![image](https://user-images.githubusercontent.com/90646961/155824099-1215de1b-712e-47f9-bd41-d95ffd1802bc.png)
 
+
+=======
+
+```
+CREATE TABLE offenses_by_county
+AS 
+SELECT counties.county, offense_description, year, SUM(offense_count) AS sum_offense_count FROM counties INNER JOIN offenses ON counties.county = offenses.county
+GROUP BY counties.county, offense_description, year 
+ORDER BY counties.county, offense_description, year DESC;
+```
+
+Once we were happy with our new tables, the rest were dropped to keep the database clean.  
+
+### Schema  
+
+The database schema can be found [here](https://github.com/labinskin/uw-project-demo/files/8091313/schema.txt).  
+
+### Data  
+
+Our data was chosen based on factors we thought would have an influence on crime rate.
+
+Crime Data from the WI DOJ: https://www.doj.state.wi.us/dles/bjia/ucr-offense-data  
+![image](https://user-images.githubusercontent.com/90646961/155824081-96ae13b3-dcb9-438e-93e8-33dfb2ec69d3.png)
+
+
+GDP data from US Bureau of Economic Analysis: https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas  
+![image](https://user-images.githubusercontent.com/90646961/155824099-1215de1b-712e-47f9-bd41-d95ffd1802bc.png)
 
 Education, Poverty, and Population Estimate data from Economic Research Service U.S. Department of Agriculture: https://www.ers.usda.gov/data-products/county-level-data-sets/download-data/  
 ![image](https://user-images.githubusercontent.com/90646961/155824170-dbcaae53-f4fd-46bc-8c41-c3950c709c36.png)
@@ -143,6 +191,11 @@ As for the other eleven variables, including Total Offenses, there are some fair
 
 Education, the total number of degrees for each of the four variables (less than a high school diploma, high school only, some college, or bachelors and higher), usually appeared in clusters and above the .80 correlation. However, because all four appeared, and not just one or two consistently, there is no one clear indicator variable for higher crime. All of them indicate higher crime, so any education level would indicate crime, meaning that it is not overly significant in correlation for crime.
 
+
+As for negative correlation, there were not many variables that were strongly negatively correlated to crime. This means that no variables are extremely consistent in areas of low crime. Some variables were slightly negative but two consistent sets of variables that appeared: heavy alcohol consumption and binge drinking. These factors indicate that alcohol does not predict crime in Wisconsin counties. However, there is a minor caveat. There was not a single WI county where the basic alcohol consumption level for both sexes was below 50%, meaning in every county at least 50% of the population consumes alcohol. A very high level of drinking overall. Such high level could cloud the clusters and correlation.
+
+Many of the variables that were considered fell into the no correlation bucket. Sudden changes in county gross domestic product, education rates in the 1970s, and some of the female alcoholism statistics are some of the many examples of variables that have no effect on crime in a given county.
+=======
 As for negative correlation, there were two consistent sets of variables that appeared: alcohol use and the urban/rural code. There were a few different alcohol variables and they appeared further away in clustering and were typically negatively correlated or very weakly positively correlated, indicating not much strength. These factors indicate that alcohol does not predict crime in Wisconsin counties. However, there is a minor caveat. There was not a single WI county where the basic alcohol consumption level for both sexes was below 50%, meaning in every county at least 50% of the population consumes alcohol. A very high level of drinking overall. Such high level could cloud the clusters and correlation.
 
 The other interesting negative correlation variable that appeared for all the crime type variables is the urban/rural code. This indicates that where you live, urban or rural, does not indicate the level of crime in your county. More urban counties are not necessarily higher in crime than more rural counties.
