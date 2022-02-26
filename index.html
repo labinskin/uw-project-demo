@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A County Correlation of Crime Data in Wisconsin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<!-- Nav Bar Start -->
+  <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+      <li><a href='#home'>Home</a></li>
+      <li><a href='#analysis'>Analysis</a></li>
+      <li><a href='#db'>Database</a></li>
+      <li><a href='#ml'>Machine Learning</a></li>
+    </ul>
+  </nav>
+  <!-- <div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ml-auto">
+          <a href="#home" class="nav-item nav-link active" style = "color: rgb(3, 3, 53);">Home</a>
+          <a href="#purpose" class="nav-item nav-link" style = "color: rgb(3, 3, 51);">Purpose</a>
+          <a href="#service" class="nav-item nav-link" style = "color: rgb(3, 3, 51);">Data Exploration</a>
+          <a href="#data_visualizations" class="nav-item nav-link" style = "color: rgb(3, 3, 51);">Data Visualizations</a>
+          <a href="#blog" class="nav-item nav-link" style = "color: rgb(3, 3, 51);">Database Design</a>
+          <a href="#blog" class="nav-item nav-link" style = "color: rgb(3, 3, 51);">Machine Learning</a>
+          <a href="#blog" class="nav-item nav-link" style = "color: rgb(3, 3, 51);">Analysis</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  Nav Bar End -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center" style="background-color: rgb(3, 3, 51);">
+        <h1 style = "color: white;"> A County Correlation of Crime Data in Wisconsin</h1>
+        <div class="about-img">
+          <img src="Visualization/CoatofArms_of_Wisconsin.jpg" alt="Image" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+ 
+
+  <body>
+    <div
+    class="section-header text-center wow zoomIn">
+      <h2 style = "color: rgb(3, 3, 51);"> Purpose</h2>
+      <p>This project examines the Wisconsin Department of Justice's crime data from 2018-2020. Pulling in data,--including education, unemployment, poverty, GDP, alcohol consumption, and poverty--we use unsupervised machine learning to detect correlation between crime and these other variables.</p>
+    </div>  
+    <div
+      class="section-header text-center wow zoomIn">
+      <h2>Data Exploration and Initial Analysis</h2>
+    </div>
+
+    <div class="about-img">
+      <img src="img/correlation_chart_total.png" alt="Image" width="1200" height="700"/>
+      <img src="img/aggregate_crime_map.png" alt="Image" width="1200" height="700"/>
+    </div>
+
+    <div
+    class="section-header text-center wow zoomIn">
+      <h2 style = "color: rgb(3, 3, 51);"> Data Visualizations</h2>
+    </div> 
+
+    <div class='tableauPlaceholder' id='viz1645740966168' style='position: relative'><object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Final_Project1_16456698341000&#47;LessThanaHighSchoolwithCrimeMap' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object>
+      </div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1645740966168');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  
+
+
+      <p>This map shows how crime relates with individuals having less than a high school diploma data from 2015-19.</p>
+    </body>
+
+
+
+
+  <body>
+    <div class='tableauPlaceholder' id='viz1645741345711' style='position: relative'><object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+      <param name='name' value='final_all_correlation&#47;HeatmapofAllCorrelatedData' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+     <param name='language' value='en-US' /></object>
+      </div>               
+       <script type='text/javascript'>                    var divElement = document.getElementById('viz1645741345711');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </body>
+
+</html>
