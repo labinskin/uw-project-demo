@@ -1,4 +1,4 @@
-﻿﻿# ﻿A County Correlation of Crime Data in Wisconsin
+# A County Correlation of Crime Data in Wisconsin
 
 <p align="center">
   <img src="https://github.com/labinskin/uw-project-demo/blob/readme_branch/Readme/CoatofArms_of_Wisconsin.png"/>
@@ -9,7 +9,7 @@ Slides: https://docs.google.com/presentation/d/1jG8A3SGQvkqOGoD52yFTsN8AOYHo_SgO
 
 ## Purpose
 
-This project examines the Wisconsin Department of Justice's crime data from 2018-2020. Pulling in data,--including education, unemployment, poverty, GDP, alcohol consumption, and poverty--we use unsupervised machine learning to detect correlation between crime and these other variables.
+This project examines the Wisconsin Department of Justice's crime data from 2018-2020. Pulling in data,--including education, unemployment, GDP, alcohol consumption, and poverty--we use unsupervised machine learning to detect correlation between crime and these other variables.
 
 
 ## Explore Crime Yourself
@@ -26,7 +26,7 @@ Exploratory analysis can be found in the E_A directory above and the code can be
 
 The machine learning portion of this project is explained in the “Machine Learning” section below. The preprocessing of the data can be reviewed [here](/ML/ml_preprocessing.ipynb) and the machine learning model can be reviewed  [here](/ML/Machine_Learning_Final.ipynb).
 
-Visuals for this project can be found in the Visuals directory above; and were created using [Tableau]( https://www.tableau.com/trial/tableau-software?utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_campaign_id=2017049&utm_language=EN&utm_country=USCA&adgroup=&adused=Brdtest21OLDv1&creative=OLDv1&gclid=Cj0KCQiAmeKQBhDvARIsAHJ7mF51CmHTP5xAMUH-lZeVEBlIM-Tb_XQDx0v2UgAKzKzMB6s5WpBHrh8aAlrcEALw_wcB&gclsrc=aw.ds).
+Visuals for this project can be found in the Visuals directory above and were created using [Tableau]( https://www.tableau.com/trial/tableau-software?utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_campaign_id=2017049&utm_language=EN&utm_country=USCA&adgroup=&adused=Brdtest21OLDv1&creative=OLDv1&gclid=Cj0KCQiAmeKQBhDvARIsAHJ7mF51CmHTP5xAMUH-lZeVEBlIM-Tb_XQDx0v2UgAKzKzMB6s5WpBHrh8aAlrcEALw_wcB&gclsrc=aw.ds).
 
 
 ## Rationale--Why Crime?
@@ -80,13 +80,11 @@ Training, testing, and feature engineering are important steps in developing a s
 
 ### Model Choice
 
-
-Choice of model for clustering in this analysis is heavily influenced by the two resources below. K-Means, provided by scikit-learn, is the method of choice to start. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. An elbow curve is used to determine the number of clusters to be input to the K-Means method. Depending on the scaler used, the elbow curve suggests the number of clusters are six to eight. Clusters are output from the model and there are some relationships to pursue.
-
+Choice of model for clustering in this analysis is heavily influenced by the two resources below. K-Means, provided by scikit-learn, is the method of choice to start. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. The K-Means model is a good choice to start but can be limited depending on the data. An elbow curve is used to determine the number of clusters to be input to the K-Means method. Depending on the scaler used, the elbow curve suggests the number of clusters are six to eight. Clusters are output from the model and there are some relationships to pursue.
 
 Using the variable correlations from the exploratory analysis drove many of the decisions on what axis to use. By using variable pairs that had strong correlation values, dense clusters were output. A couple of some of the most distinct and dense clusters were when different crimes were plotted together or when crimes are plotted with poverty. The dense clusters that were output signify a strong relationship.  
 
-K-Means does have a good output, but it there is certainly room for improvement. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. 
+K-Means does have a good output, but it there is certainly room for improvement. Some of the groupings are dense but are uneven in size. There are also outliers in the data that can cause issues for the K-Means model. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and removes outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. If time permits, another method will be attmepted.
 
 
 [article](https://machinelearningmastery.com/clustering-algorithms-with-python/)
