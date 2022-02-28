@@ -15,6 +15,7 @@
     <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
     <ul>
       <li><a href='#purpose'>Purpose</a></li>
+      <li><a href='#db'>Database</a></li>
       <li><a href='#ml'>Machine Learning</a></li>
       <li><a href='#ea'>Exploratory Analysis</a></li>
       <li><a href='#dv'>Data Visualization</a></li>
@@ -68,6 +69,42 @@
     </div> 
   </body>  
 <!-- Purpose End -->
+
+<!-- Database Start -->
+<div class="db" id="db">
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
+        <h1 style = "color: white;">Database</h1>
+      </div> 
+    </div>
+  </div> 
+  <body>
+    <div
+      class="section-header text-center wow zoomIn" style="text-align:center;">
+      <h2>ERD</h2>
+      <img src="img/erd.png" alt="Image" hspace="20" vspace="20"/>
+    </div>
+    <div class="about-img" style="background-color: rgb(3, 3, 51)" >
+      <p style = "color: white;">The ERD above depicts our database plans. Each line underneath county in our County_Population_Data outline represents each csv file topic merged into one table.</p>
+    </div>
+    <div
+    class="section-header text-center wow zoomIn" style="text-align:center;">
+    <h2>Database Creation</h2>
+    <img src="img/crud.png" alt="Image" hspace="20" vspace="20"/>
+  </div>
+  <div class="about-img" style="background-color: rgb(3, 3, 51)" >
+    <p style = "color: white;">A relational database is a collection of data organized as tables that can relate to one another through primary and foreign keys. The acronym CRUD represents four key operations used on the data needing to be tracked. By following this method, we were able to produce a clean database.</p>
+    <p style = "color: white;" >  To start building our database, nine tables, showing in our ERD, were made and loaded with data we had gathered from multiple sources. We then used SQL inner joins to merge eight of these tables on county, creating two tables for our machine learning model to reference. Our offenses data required a bit more work. Once the three datasets were loaded into an offenses table, we wanted to group columns in order to see only pertinent information. The following code was used to do so:
+    </p>
+  </div>
+  <div>
+    <img src="img/sqlsnip.png" alt="Image"/>
+  </div>
+
+  </div>
+  </body>
+<!-- Database End -->
 
 <!-- Machine Learning Start -->
 <div class="ml" id="ml">
