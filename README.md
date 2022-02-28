@@ -7,6 +7,9 @@
 ## Presentation
 Slides: https://docs.google.com/presentation/d/1jG8A3SGQvkqOGoD52yFTsN8AOYHo_SgOpc7PPfqlGEM/edit?usp=sharing
 
+## Dashboard
+Github pages: https://labinskin.github.io/uw-project-demo/
+
 ## Purpose
 
 This project examines the Wisconsin Department of Justice's crime data from 2018-2020. Pulling in data,--including education, unemployment, GDP, alcohol consumption, and poverty--we use unsupervised machine learning to detect correlation between crime and these other variables.
