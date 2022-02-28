@@ -15,6 +15,7 @@
     <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
     <ul>
       <li><a href='#purpose'>Purpose</a></li>
+      <li><a href='#db'>Database</a></li>
       <li><a href='#ml'>Machine Learning</a></li>
       <li><a href='#ea'>Exploratory Analysis</a></li>
       <li><a href='#dv'>Data Visualization</a></li>
@@ -69,6 +70,42 @@
   </body>  
 <!-- Purpose End -->
 
+<!-- Database Start -->
+<div class="db" id="db">
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
+        <h1 style = "color: white;">Database</h1>
+      </div> 
+    </div>
+  </div> 
+  <body>
+    <div
+      class="section-header text-center wow zoomIn" style="text-align:center;">
+      <h2>ERD</h2>
+      <img src="img/erd.png" alt="Image" hspace="20" vspace="20"/>
+    </div>
+    <div class="about-img" style="background-color: rgb(3, 3, 51)" >
+      <p style = "color: white;">The ERD above depicts our database plans. Each line underneath county in our County_Population_Data outline represents each csv file topic merged into one table.</p>
+    </div>
+    <div
+    class="section-header text-center wow zoomIn" style="text-align:center;">
+    <h2>Database Creation</h2>
+    <img src="img/crud.png" alt="Image" hspace="20" vspace="20"/>
+  </div>
+  <div class="about-img" style="background-color: rgb(3, 3, 51)" >
+    <p style = "color: white;">A relational database is a collection of data organized as tables that can relate to one another through primary and foreign keys. The acronym CRUD represents four key operations used on the data needing to be tracked. By following this method, we were able to produce a clean database.</p>
+    <p style = "color: white;" >  To start building our database, nine tables, showing in our ERD, were made and loaded with data we had gathered from multiple sources. We then used SQL inner joins to merge eight of these tables on county, creating two tables for our machine learning model to reference. Our offenses data required a bit more work. Once the three datasets were loaded into an offenses table, we wanted to group columns in order to see only pertinent information. The following code was used to do so:
+    </p>
+  </div>
+  <div>
+    <img src="img/sqlsnip.png" alt="Image"/>
+  </div>
+
+  </div>
+  </body>
+<!-- Database End -->
+
 <!-- Machine Learning Start -->
 <div class="ml" id="ml">
   <div class="container">
@@ -77,33 +114,19 @@
         <h1 style = "color: white;"> Machine Learning</h1>
       </div> 
     </div>
-  </div>
+  </div> 
   <body>
-    <div class="purpose" id="purpose">
-    <div class="container">
-      <div class="row">
-        <div class="section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
-          <h2 style = "color: white;"> Why machine learning</h2>
-            <p style = "color: white;">The goal of this project is to answer a question; what drives crime in Wisconsin? Most residents will have an opinion on what is contributing to crime and they may even have an opinion of what should be done to limit crime. These opinions are as varied as the person stating them, and unless coming from an expert in the field, there is little confidence that these opinions are correct. A better way to make a large scale, and more confident assessment, is to use data driven decision making. Using a large, publicly available, dataset is the start of this process. An efficient next step is to utilize an automated analytical method to identify patterns and learn from the data. Patterns in the data have the potential to predict or at least highlight possible routes of crime intervention. An efficient tool to recognize these patterns or predictions is machine learning. </p>
-          <h2 style = "color: white;"> Clustering</h2>  
-            <p style = "color: white;"> There are a couple of ways to approach this problem, and one of them is to recognize groupings or patterns within the data. Unsupervised machine learning for clustering data is a solution to recognize groups within the large dataset. The clustered data will hopefully make potential relationships easier to identify. The quality of these results will be dependent upon distribution of the data. A tight cluster, or shaped cluster, will likely represent a strong relationship between features, and an odd shape or dispersed cluster will represent a weak relationship.</p>
-          <h2 style = "color: white;"> Model Choice</h2>    
-            <p style = "color: white;"> Choice of model for clustering in this analysis is heavily influenced by the two resources below. K-Means, provided by scikit-learn, is the method of choice to start. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. The K-Means model is a good choice to start but can be limited depending on the data. An elbow curve is used to determine the number of clusters to be input to the K-Means method. Depending on the scaler used, the elbow curve suggests the number of clusters are six to eight. Clusters are output from the model and there are some relationships to pursue.
-
-              Using the variable correlations from the exploratory analysis drove many of the decisions on what axis to use. By using variable pairs that had strong correlation values, dense clusters were output. A couple of some of the most distinct and dense clusters were when different crimes were plotted together or when crimes are plotted with poverty. The dense clusters that were output signify a strong relationship.  
-              
-              K-Means does have a good output, but it there is certainly room for improvement. Some of the groupings are dense but are uneven in size. There are also outliers in the data that can cause issues for the K-Means model. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and removes outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. If time permits, another method will be attmepted. </p>
-          </div> 
-      </div>
-    </div> 
-  </body>  
-  <body>
+    <div
+      class="section-header text-center wow zoomIn">
+      <h2>Unsupervised Machine Learning</h2>
+    </div>
     <div class="about-img" style="background-color: rgb(3, 3, 51);" >
       <img src="img/totaloffense_poverty.png" alt="Image" width="1200" height="500"/>
       <p style = "color: white;">The image above is generated after running Scikit-Learn's K-Means unsuperviesed machine learning algorithm. The clusters are closely grouped, indicating a relationship between poverty and total offense count. </p>
       <img src="img/gdp_heavydrink2.png" alt="Image" width="1200" height="500"/>
       <p style = "color: white;" >The image above again uses K-Means as the algorithm to generate clusters. This three dimensional plot has heavy drinking on an axis, gross domestic product on another axis, and total offneses on the third axis. There are clear, dense clusters, indicating a relationship between the variables displayed.</p>
     </div>
+  </div>
   </body>
 <!-- Machine Learning End -->
 
@@ -469,7 +492,7 @@
   <div class="container">
     <div class="row">
       <div class="jumbotron section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
-        <h1 style = "color: white;"> Paths Forward</h1>  
+        <h1 style = "color: white;"> Paths Forward?</h1>  
           <p style = "color: white;">There are a variety of different paths forward. First, we could find more variables, and possibly updated alcohol data, to test against the crime data, as the alcohol data was from 2002 to 2012 and our crime data was from 2018-2020. Additionally, with the alcohol data we could see if the WI DOJ has data going back to the time of the alcohol study (2002-2012). Adding more crime data from a couple of decades ago, along with more years of the other variables could provide depth and more insight into the variable’s correlation. A few possible variables to find would be religiosity and/or religious affiliation, type of occupation--expanding past employed/unemployed and examining the different types of jobs, and political affiliation or non-affiliation, to name but a few possible expanded variables. Second, we could look for clustering and possible correlation among other variables for an expanded scope, not just focusing on crime, but other variables. Third, many of the datasets we used for the other variables included all counties across the United States. Using that data and finding crime data for those states and counties, we could begin to compare states and counties across the country. This would provide more insight into crime across the country. This study would be a large undertaking, but the benefits of understanding the variables that may influence crime would be incredibly useful for policymakers at all levels. Fourth, with the negative correlation of crime and urban/rural codes, it would be interesting to go deeper and see if this is true across the United States. Furthermore, it would be interesting to study if one particular type of crime was prevalent in rural or urban counties.  </p>
         
           <h1 style = "color: white;">Link to Github</h1>
