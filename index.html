@@ -19,6 +19,7 @@
       <li><a href='#ml'>Machine Learning</a></li>
       <li><a href='#ea'>Exploratory Analysis</a></li>
       <li><a href='#dv'>Data Visualization</a></li>
+      <li><a href='#tr'>Takeaways and Recommendations</a></li>
       <li><a href='#pf'>Paths Forward</a></li>
     </ul>
   </nav>
@@ -81,7 +82,7 @@
 <div class="data" id="data">
   <div class="container">
     <div class="row">
-      <div class="jumbotron section-header\ wow zoomIn" style="background-color: rgb(3, 3, 51);">
+      <div class="jumbotron section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
         <h1 style = "color: white;">Data</h1>
       </div> 
     </div>
@@ -227,13 +228,37 @@
     <div class="section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
       <h2 style = "color: white;"> These three maps show the changing unemployment rates across WI from 2018 to 2020.</h2>
       <h4 style = "color: white;">You can go further with the interactive chart below the maps to explore the different rates across the counties. As the key on each map indicates, the overall rates change. The interactive chart will provide greater insight into each county and the changes per year.</h4>
-      <p style="text-align:left; color: white">Overall Unemployment Rates the Last Three years:</p>
-      <p style="text-align:left; color: white">Unemployment rate 2018: 3.3%</p>
-      <p style="text-align:left; color: white">Unemployment rate 2019: 3.7%</p>
-      <p style="text-align:left; color: white">Unemployment rate 2020: 6.7%</p>
-      <img src="img/unemployment_2018.png" alt="Image" width="850" height="500"/>
-      <img src="img/unemployment_2019.png" alt="Image" width="850" height="500"/>
-      <img src="img/unemployment_2020.png" alt="Image" width="850" height="500"/>
+    </div>
+  </div>
+</div>
+
+
+<p class="c"> 
+
+      <div class="row">
+        <div class="column left" style="background-color: rgb(3, 3, 51);">
+          <p style="text-align:left; color: white">Unemployment rate 2018: 3.3%</p>
+        </div>
+        <div class="column right" style="background-color: rgb(3, 3, 51);">
+          <img src="img/unemployment_2018.png" alt="Image" width="850" height="500"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column left" style="background-color: rgb(3, 3, 51);">
+          <p style="text-align:left; color: white">Unemployment rate 2019: 3.7%</p>
+        </div>
+        <div class="column right" style="background-color: rgb(3, 3, 51);">
+          <img src="img/unemployment_2019.png" alt="Image" width="850" height="500"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column left" style="background-color: rgb(3, 3, 51);">
+          <p style="text-align:left; color: white">Unemployment rate 2020: 6.7%</p>
+        </div>
+        <div class="column right" style="background-color: rgb(3, 3, 51);">
+          <img src="img/unemployment_2020.png" alt="Image" width="850" height="500"/>
+        </div>
+      </div>
 
 
       <div class='tableauPlaceholder' id='viz1645911613060' style='position: relative'>
@@ -305,41 +330,6 @@
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
       vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
-
-<p class="c"> 
-
-<div
-  style="background-color: rgb(3, 3, 51);">
- <h3 style = "color: white;">Aggregate Crime Map</h3>
- <p style="text-align:left; color: white">*Use this map to explore the per capita crime rate per county.</p>
- <p style="text-align:left; color: white">*Select the different years and offenses to see how the per capita rate changes. If you select multiple years, it will add the per capita rates together for the counties.</p>
-</div>
-
-  <div class='tableauPlaceholder' id='viz1645907555128' style='position: relative'>
-    <object class='tableauViz'  style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-    <param name='embed_code_version' value='3' /> 
-    <param name='site_root' value='' />
-    <param name='name' value='Final_Project1_16456698341000&#47;MapCrimeByCounty' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-US' />
-    </object>
-    </div>                
-    <script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1645907555128');                    
-    var vizElement = divElement.getElementsByTagName('object')[0];                    
-    vizElement.style.width='100%';
-    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-    var scriptElement = document.createElement('script');         
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-    </script>
     
   <p class="c"> 
 
@@ -375,10 +365,64 @@
 </script>
 
 <p class="c"> 
+
+  <div
+    style="background-color: rgb(3, 3, 51);">
+   <h3 style = "color: white;">Crime and Unemployment Map</h3>
+   <p style="text-align:left; color: white">*Use this map to explore the per capita crime rate per county and the corresponding unemployment rate for a particular year.</p>
+   <p style="text-align:left; color: white">*Select the different years for offense and unemployment (be sure they are the same), as well as selecting which type of offense you are interested in.</p>
+  </div>
+  
+  <div class='tableauPlaceholder' id='viz1646176418980' style='position: relative'>
+    <object class='tableauViz'  style='display:none;'
+    ><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+     <param name='embed_code_version' value='3' />
+     <param name='site_root' value='' />
+    <param name='name' value='Final_Project1_16456698341000&#47;CrimebyUnemploymentMap' />
+    <param name='tabs' value='no' />
+    <param name='toolbar' value='yes' />
+    <param name='animate_transition' value='yes' />
+    <param name='display_static_image' value='yes' />
+    <param name='display_spinner' value='yes' />
+    <param name='display_overlay' value='yes' />
+    <param name='display_count' value='yes' />
+    <param name='language' value='en-US' />
+    </object>
+    </div>               
+     <script type='text/javascript'>
+     var divElement = document.getElementById('viz1646176418980');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+    
+
+<p class="c"> 
 <!-- Data Visualization End -->
 
 <!-- Paths Forward Start -->
 <body>
+  <div class="tr" id="tr">
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
+          <h1 style = "color: white;"> Takeaways and Recommendations</h1>  
+            <p style="text-align:left; color: white">First, the presence of other crime is the most likely indicator of crime. Other offenses were clustered and the highest correlated variables to indicate the presence of crime. </p> 
+            <p style="text-align:left; color: white">Second, poverty, ranging from all people in poverty, to all people ages 0-17, and all people ages 5-17, were major indicators of crime. This is not overly surprising, as individuals maybe more likely to commit offenses to survive.</p> 
+            <p style="text-align:left; color: white">Third, unemployment rates were the other variable with clustering and high positive correlation. Unemployment for long periods of time can lead people to poverty, causing them to possibly commit crimes to survive as well.</p>  
+            <p style="text-align:left; color: white">With crime being connected to other crime, we must look at the other variables as possible indicators of crime and for ways to reduce improve those conditions, if we want to reduce crime. All of these findings lead to a few key takeaways for those looking to drop crime rates:</p>
+            <p style="text-align:left; color: white"> - Policymakers should look for ways to reduce poverty and unemployment.</p>
+            <p style="text-align:left; color: white"> - Citizens should lobby policymakers for programs that work to improve employment opportunities, with jobs that individuals and families can live off of.</p>
+            <p style="text-align:left; color: white"> - Citizens should also lobby policymakers for poverty reducing programs. At the Federal level, programs that provide Social Security, food assistance, tax credits, and housing assistance have been helpful in reducing poverty.</p>
+            <p style="text-align:left; color: white"> - At the local level, policymakers should use our tools to look for counties and communities of similar sizes and study what they have done for unemployment and poverty. While Federal programs could bring money, local leaders need to figure out what works best for their community. Not only is each community different, but the programs needed to succeed will be different and getting local buy-in to the programs will be different.</p>
+            <p style="text-align:left; color: white"></p>
+            <p style="text-align:left; color: white"></p>
+            <p style="text-align:left; color: white"></p>
+          </div> 
+      </div>
+    </div> 
   <div class="pf" id="pf">
   <div class="container">
     <div class="row">
