@@ -1,7 +1,7 @@
 # A County Correlation of Crime Data in Wisconsin
 
 <p align="center">
-  <img src="https://github.com/labinskin/uw-project-demo/blob/readme_branch/Readme/CoatofArms_of_Wisconsin.png"/>
+  <img src="https://github.com/labinskin/uw-project-demo/blob/main/Readme/CoatofArms_of_Wisconsin.png"/>
 </p>
 
 ## Presentation
