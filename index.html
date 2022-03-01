@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="IE=edge", initial-scale=1.0">
+    <meta name="viewport" content="IE=edge", initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A County Correlation of Crime Data in Wisconsin</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -64,7 +64,13 @@
             <p style = "color: white;"> Some of the preliminary questions we hope to answer are:
               what are the factors that might increase or decrease the rate of crime in a county in Wisconsin? 
               Which variables cluster and correlate the most with crime?</p>
-          </div> 
+            <h2 style = "color: white;"> Our Approach</h2>  
+              <p style = "color: white;"> We approached this as data scientist looking to explore the connection between crime and other demographic traits.</p>
+              <p style = "color: white;">In doing this, we gathered data from a variety of different sources. This process and our sources are explored in the data section.</p>
+              <p style = "color: white;"> We used Machine Learning to analyze the data, looking for clusters and connections between them. And in-depth discussion of this is process is in our Machine Learning section.</p>
+              <p style = "color: white;"> To help us understand the data, we used Tableau to visualize the connections, clusters, and correlations between our different variables. Interactive elements are in our Data Visualization section.</p>
+              <p style = "color: white;"> To conclude, we have a few key takeways from our data analysis, as well as a discussion of possible paths forward.</p>
+           </div> 
       </div>
     </div> 
   </body>  
@@ -346,70 +352,6 @@
     
   <p class="c"> 
 
-  <div
-    style="background-color: rgb(3, 3, 51);">
-    <h3 style = "color: white;">Total Offense Correlation</h3>
-    <p style = "color: white;">*Use this Total Offense Correlation Chart to explore how different variables correlated to Total Offenses for all three years.</p>
-    <p style = "color: white;">*Click to highlight a variable and its corresponding correlation.</p>
-  </div>
-
-    <div class='tableauPlaceholder' id='viz1645893104422' style='position: relative'>
-      <object class='tableauViz'  style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-       <param name='embed_code_version' value='3' /> 
-      <param name='site_root' value='' /><param name='name' value='final_all_correlation&#47;BarChartofTotalOffenses' />
-      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-      </object>
-      </div>                
-    <script type='text/javascript'>                    
-      var divElement = document.getElementById('viz1645893104422');                    
-      var vizElement = divElement.getElementsByTagName('object')[0];                    
-      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-      var scriptElement = document.createElement('script');                    s
-      criptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-    </script>
-
-<p class="c"> 
-
-  <div
-    style="background-color: rgb(3, 3, 51);">
-    <h3 style = "color: white;">Heatmap Correlation</h3>
-    <p style = "color: white;">*Examine this heatmap of all the variables and all the sums of offense for the three years of crime data.</p>
-    <p style = "color: white;">*Explore and see what variables are positively or negatively correlated to which crimes.</p>
-  </div>
-
-<body>
-  <div class='tableauPlaceholder' id='viz1645741345711' style='position: relative'><object class='tableauViz'  style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-    <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-    <param name='name' value='final_all_correlation&#47;HeatmapofAllCorrelatedData' />
-    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-   <param name='language' value='en-US' /></object>
-    </div>               
-     <script type='text/javascript'>
-      var divElement = document.getElementById('viz1645741345711');                   
-      var vizElement = divElement.getElementsByTagName('object')[0];                    
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-      var scriptElement = document.createElement('script');                    
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-    </script>
-
-<p class="c"> 
-
 </body>
   <div
     style="background-color: rgb(3, 3, 51);">
@@ -442,70 +384,6 @@
 </script>
 
 <p class="c"> 
-
-<div
-  style="background-color: rgb(3, 3, 51);">
-  <h3 style = "color: white;">Crime and Unemployment Map</h3>
-  <p style = "color: white;">*With unemployment being a variable that clustered and correlated highly, explore how crime and unemployment rates are connected.</p>
-  <p style = "color: white;">*Sort by type of offense and/or year of unemployment to see the connections. The darker the color, the higher the unemployment rate. The larger the marker, the higher the rate of per capita crime.</p>
-</div>
-
-<div class='tableauPlaceholder' id='viz1645894448385' style='position: relative'>
-  <object class='tableauViz'  style='display:none;'>
-  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-  <param name='embed_code_version' value='3' /> 
-  <param name='site_root' value='' />
-  <param name='name' value='Final_Project1_16456698341000&#47;CrimebyUnemploymentMap' />
-  <param name='tabs' value='no' />
-  <param name='toolbar' value='yes' />
-  <param name='animate_transition' value='yes' />
-  <param name='display_static_image' value='yes' />
-  <param name='display_spinner' value='yes' />
-  <param name='display_overlay' value='yes' />
-  <param name='display_count' value='yes' />
-  <param name='language' value='en-US' />
-  </object>
-</div>                
-  <script type='text/javascript'>
-   var divElement = document.getElementById('viz1645894448385');                    
-  var vizElement = divElement.getElementsByTagName('object')[0];                    
-  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-  var scriptElement = document.createElement('script');                    
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);               
-  </script>
-</body>
-<p class="c"> 
-<div
-    style="background-color: rgb(3, 3, 51);">
-    <h3 style = "color: white;">Crime and Unemployment Bar Chart</h3>
-    <p style = "color: white;">*With this chart, you can select the different unemployment variables.</p>
-    <p style = "color: white;">*Also select different years to see how crime and unemployment are connected.</p>
-</div>
-<div class='tableauPlaceholder' id='viz1645908751072' style='position: relative'>
-  <object class='tableauViz'  style='display:none;'>
-  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-   <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-  <param name='name' value='Final_Project1_16456698341000&#47;UnemploymentandCrime' />
-  <param name='tabs' value='no' />
-  <param name='toolbar' value='yes' />
-  <param name='animate_transition' value='yes' />
-  <param name='display_static_image' value='yes' />
-  <param name='display_spinner' value='yes' />
-  <param name='display_overlay' value='yes' />
-  <param name='display_count' value='yes' />
-  <param name='language' value='en-US' />
-  </object>
-  </div>                
-  <script type='text/javascript'>
-  var divElement = document.getElementById('viz1645908751072');                    
-  var vizElement = divElement.getElementsByTagName('object')[0];                    
-  vizElement.style.width='100%';
-  vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-  var scriptElement = document.createElement('script');                    
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-  </script>
 <!-- Data Visualization End -->
 
 <!-- Paths Forward Start -->
@@ -515,7 +393,13 @@
     <div class="row">
       <div class="jumbotron section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
         <h1 style = "color: white;"> Paths Forward</h1>  
-          <p style = "color: white;">There are a variety of different paths forward. First, we could find more variables, and possibly updated alcohol data, to test against the crime data, as the alcohol data was from 2002 to 2012 and our crime data was from 2018-2020. Additionally, with the alcohol data we could see if the WI DOJ has data going back to the time of the alcohol study (2002-2012). Adding more crime data from a couple of decades ago, along with more years of the other variables could provide depth and more insight into the variable’s correlation. A few possible variables to find would be religiosity and/or religious affiliation, type of occupation--expanding past employed/unemployed and examining the different types of jobs, and political affiliation or non-affiliation, to name but a few possible expanded variables. Second, we could look for clustering and possible correlation among other variables for an expanded scope, not just focusing on crime, but other variables. Third, many of the datasets we used for the other variables included all counties across the United States. Using that data and finding crime data for those states and counties, we could begin to compare states and counties across the country. This would provide more insight into crime across the country. This study would be a large undertaking, but the benefits of understanding the variables that may influence crime would be incredibly useful for policymakers at all levels. Fourth, with the negative correlation of crime and urban/rural codes, it would be interesting to go deeper and see if this is true across the United States. Furthermore, it would be interesting to study if one particular type of crime was prevalent in rural or urban counties.  </p>
+          <p style = "color: white;">There are a variety of different paths forward.</p> 
+          <p style = "color: white;">First, we could find more variables, and possibly updated alcohol data, to test against the crime data, as the alcohol data was from 2002 to 2012 and our crime data was from 2018-2020.</p> 
+          <p style = "color: white;">Additionally, with the alcohol data we could see if the WI DOJ has data going back to the time of the alcohol study (2002-2012). Adding more crime data from a couple of decades ago, along with more years of the other variables could provide depth and more insight into the variable’s correlation. </p>  
+          <p style = "color: white;">A few possible variables to find would be religiosity and/or religious affiliation, type of occupation--expanding past employed/unemployed and examining the different types of jobs, and political affiliation or non-affiliation, to name but a few possible expanded variables. </p>
+          <p style = "color: white;">Second, we could look for clustering and possible correlation among other variables for an expanded scope, not just focusing on crime, but other variables. </p>
+          <p style = "color: white;">Third, many of the datasets we used for the other variables included all counties across the United States. Using that data and finding crime data for those states and counties, we could begin to compare states and counties across the country. This would provide more insight into crime across the country. This study would be a large undertaking, but the benefits of understanding the variables that may influence crime would be incredibly useful for policymakers at all levels. </p>
+          <p style = "color: white;">Fourth, with the negative correlation of crime and urban/rural codes, it would be interesting to go deeper and see if this is true across the United States. Furthermore, it would be interesting to study if one particular type of crime was prevalent in rural or urban counties.</p>
         
           <h1 style = "color: white;">Link to Github</h1>
 
