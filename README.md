@@ -188,7 +188,7 @@ With crime being connected to other crime, we must look at the other variables a
 - At the Federal level, programs that provide Social Security, food assistance, tax credits, and housing assistance have been helpful in reducing poverty. While Federal programs could bring money, local leaders need to figure out what works best for their community. Not only is each community different, but the programs needed to succeed will be different and getting local buy-in to the programs will be different.
 - Citizens should lobby policymakers for programs that work to improve employment opportunities, with jobs that offer a living wage for individuals and families.
 - Citizens should also lobby policymakers for poverty reducing programs. 
-- As discussed below, other states should look into what variables increase or decrese crime.
+- As discussed below, other states should look into what variables increase or decrease crime.
 - States should share information, especially at the local level, as some crime, poverty, and unemployment reducing programs might offer templates for similar counties (rural/urban).
 
 ## Limitations and Paths Forward
