@@ -151,6 +151,21 @@ Ipsos Polling Data on Crime: https://www.ipsos.com/en-us/news-polls/axios-Violen
 Our ERD can be viewed [here](https://user-images.githubusercontent.com/90646961/155002994-cc8ceeab-c656-4224-94f3-f1015f7f274b.png).
 
 
+## Takeaways
+
+First, the presence of other crime is the most likely indicator of crime. Other offenses were clustered and the highest correlated variables to indicate the presence of crime. 
+
+Second, poverty, ranging from all people in poverty, to all people ages 0-17, and all people ages 5-17, were major indicators of crime. This is not overly surprising, as individuals maybe more likely to commit offenses to survive.
+
+Third, unemployment rates were the other variable with clustering and high positive correlation. Unemployment for long periods of time can lead people to poverty, causing them to possibly commit crimes to survive as well.
+
+With crime being connected to other crime, we must look at the other variables as possible indicators of crime and for ways to reduce improve those conditions, if we want to reduce crime. All of these findings lead to a few key takeaways for those looking to drop crime rates:
+
+- Policymakers should look for ways to reduce poverty and unemployment.
+- Citizens should lobby policymakers for programs that work to improve employment opportunities, with jobs that individuals and families can live off of.
+- Citizens should also lobby policymakers for poverty reducing programs. At the Federal level, programs that provide Social Security, food assistance, tax credits, and housing assistance have been helpful in reducing poverty.
+- At the local level, policymakers should use our tools to look for counties and communities of similar sizes and study what they have done for unemployment and poverty. While Federal programs could bring money, local leaders need to figure out what works best for their community. Not only is each community different, but the programs needed to succeed will be different and getting local buy-in to the programs will be different.
+
 ## Analysis and Findings
 
 Drawing from the Machine Learning groupings and the correlation data, there are some broad findings about crime in Wisconsin counties that we can draw.
