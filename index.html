@@ -121,24 +121,29 @@
           <h2 style = "color: white;"> Why machine learning</h2>
             <p style="text-align:left; color: white">The goal of this project is to answer a question; what drives crime in Wisconsin? Most residents will have an opinion on what is contributing to crime and they may even have an opinion of what should be done to limit crime. These opinions are as varied as the person stating them, and unless coming from an expert in the field, there is little confidence that these opinions are correct. A better way to make a large scale, and more confident assessment, is to use data driven decision making. Using a large, publicly available, dataset is the start of this process. An efficient next step is to utilize an automated analytical method to identify patterns and learn from the data. Patterns in the data have the potential to predict or at least highlight possible routes of crime intervention. An efficient tool to recognize these patterns or predictions is machine learning. </p>
           <h2 style = "color: white;"> Clustering</h2>  
-            <p style="text-align:left; color: white"> There are a couple of ways to approach this problem, and one of them is to recognize groupings or patterns within the data. Unsupervised machine learning for clustering data is a solution to recognize groups within the large dataset. The clustered data will hopefully make potential relationships easier to identify. The quality of these results will be dependent upon distribution of the data. A tight cluster, or shaped cluster, will likely represent a strong relationship between features, and an odd shape or dispersed cluster will represent a weak relationship.</p>
-          <h2 style = "color: white;"> Model Choice</h2>    
-            <p style="text-align:left; color: white"> Choice of model for clustering in this analysis is heavily influenced by the two resources below. K-Means, provided by scikit-learn, is the method of choice to start. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. The K-Means model is a good choice to start but can be limited depending on the data. An elbow curve is used to determine the number of clusters to be input to the K-Means method. Depending on the scaler used, the elbow curve suggests the number of clusters are six to eight. Clusters are output from the model and there are some relationships to pursue.
+            <p style="text-align:left; color: white"> There is a family of machine learning techniques that can be used to automatically group structures of data without being tied to a specific outcome. Clustering algorithms can be particularly powerful in identifying relationships between large numbers of variables and from perspectives that humans cannot readily perceive. In this project clustering is being used to find relationships between two hundred eighty-eight variables. </p>
+          <h2 style = "color: white;"> Models & Choice</h2>    
+            <p style="text-align:left; color: white">The clustering algorithm that was chosen to start with is K-Means, provided by scikit-learn. The K-Means method is a general-purpose algorithm that does not use many clusters, and calculates clusters based on distance between points. The data used in this analysis uses many features but does not have many values to each feature, which may indicate a low number of clusters. K-Means requires an input number of clusters to get an output. An elbow curve was used to determine the number of clusters used. Some experimentation was done using different scalers, but six to eight clusters was the calculated number of clusters input. The output K-Means did have some useful relationships to pursue.  
 
-              Using the variable correlations from the exploratory analysis drove many of the decisions on what axis to use. By using variable pairs that had strong correlation values, dense clusters were output. A couple of some of the most distinct and dense clusters were when different crimes were plotted together or when crimes are plotted with poverty. The dense clusters that were output signify a strong relationship.  
-              
-              K-Means does have a good output, but it there is certainly room for improvement. Some of the groupings are dense but are uneven in size. There are also outliers in the data that can cause issues for the K-Means model. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and removes outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. If time permits, another method will be attmepted. </p>
-          </div> 
+              DBSCAN was the second algorithm that was chosen. DBSCAN is another clustering algorithm provided by scikit-learn. This algorithm was of interest because it has the potential to perform better with uneven cluster sizes, can remove outliers from clusters, and uses a different geometry metric. In the end, the difference between models and clusters can be seen, but is not a large difference. DBSCAN certainly picks outliers as different clusters. Four counties in consistently stood out on many features, Crawford, Marquette, Menominee, and Washington, were marked as outliers by the algorithm. Menominee in particular did not follow many trends and had very high unemployment, but not a lot of crime per capita.</p>  
+        </div> 
       </div>
     </div> 
   </body>  
   <body>
     <div class="about-img" style="background-color: rgb(3, 3, 51);" >
-      <img src="img/totaloffense_poverty.png" alt="Image" width="1200" height="500"/>
+      <img src="img/kmeans_une_crime.png" alt="Image" width="1200" height="500"/>
       <p style="text-align:left; color: white">The image above is generated after running Scikit-Learn's K-Means unsuperviesed machine learning algorithm. The clusters are closely grouped, indicating a relationship between poverty and total offense count. </p>
-      <img src="img/gdp_heavydrink2.png" alt="Image" width="1200" height="500"/>
-      <p style = "color: white;" >The image above again uses K-Means as the algorithm to generate clusters. This three dimensional plot has heavy drinking on an axis, gross domestic product on another axis, and total offneses on the third axis. There are clear, dense clusters, indicating a relationship between the variables displayed.</p>
+      <img src="img/dbscan_poverty_crime.PNG" alt="Image" width="1200" height="500"/>
+      <p style = "color: white;" >The image above uses Scikit-Learn's DBSCAN as the algorithm to generate clusters. This tplot has poverty on an axis, and crime on the other axis. Note the outliers of Menominee and Crawford Counties.</p>
     </div>
+    <div class="purpose" id="purpose">
+      <div class="container">
+        <div class="row">
+          <div class="section-header text-center wow zoomIn" style="background-color: rgb(3, 3, 51);">
+            <h2 style = "color: white;"> Future Machine Learning Work</h2>
+              <p style="text-align:left; color: white">If this project was to be explored in further detail, there are a couple of recommendations specific to machine learning. Principle Component Analysis is a method to reduce the number of features. This method also accounts for the contribution of each feature and weights this into the output. The dataset in the project would likely favor this type of analysis due to the large number of features. Some investigation into PCA was attempted but ultimately no contribution to the project was made.</p>
+          </div>
   </body>
 <!-- Machine Learning End -->
 

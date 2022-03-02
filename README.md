@@ -1,4 +1,4 @@
-# A County Correlation of Crime Data in Wisconsin
+﻿# A County Correlation of Crime Data in Wisconsin
 
 <p align="center">
   <img src="https://github.com/labinskin/uw-project-demo/blob/main/img/CoatofArms_of_Wisconsin.png"/>
@@ -87,7 +87,7 @@ Choice of model for clustering in this analysis is heavily influenced by the two
 
 Using the variable correlations from the exploratory analysis drove many of the decisions on what axis to use. By using variable pairs that had strong correlation values, dense clusters were output. A couple of some of the most distinct and dense clusters were when different crimes were plotted together or when crimes are plotted with poverty. The dense clusters that were output signify a strong relationship.  
 
-K-Means does have a good output, but it there is certainly room for improvement. Some of the groupings are dense but are uneven in size. There are also outliers in the data that can cause issues for the K-Means model. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and removes outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. If time permits, another method will be attmepted.
+K-Means does have a good output, but it there is certainly room for improvement. Some of the groupings are dense but are uneven in size. There are also outliers in the data that can cause issues for the K-Means model. A second method has been attempted to produce a model. DBSCAN is the second method selected because it often performs better with uneven clusters, and removes outliers within the dataset. Unfortunately, at this point in the analysis the DBSCAN model output is a single cluster. Inputs are being manipulated but no change has produced a better output to date. If time permits, another method will be attempted.
 
 
 [article](https://machinelearningmastery.com/clustering-algorithms-with-python/)
